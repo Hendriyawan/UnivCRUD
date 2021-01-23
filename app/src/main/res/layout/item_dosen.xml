@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="@dimen/_9sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/_5sdp"
+    app:rippleColor="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:srcCompat="@drawable/ic_action_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_photo"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="@dimen/_2sdp"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="@dimen/_1sdp"
+                tools:src="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="normal"
+                        android:textColor="@android:color/white"
+                        android:text="@string/name"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:text="@string/sparator"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/item_nama_dosen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@android:color/white"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="bold"
+                        tools:text="ABCD" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal"
+                        android:text="@string/nid"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:text="@string/sparator"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/item_nidn_dosen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="bold"
+                        tools:text="12345" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textStyle="normal"
+                        android:textAllCaps="true"
+                        android:text="@string/tanggal_lahir"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:text="@string/sparator"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/item_tanggal_lahir_dosen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="bold"
+                        tools:text="20-05-1998" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

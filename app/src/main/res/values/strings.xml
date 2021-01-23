@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UNIVCRUD</string>
+    <string name="text_button_dosen">Data Dosen</string>
+    <string name="text_button_mahasiswa">Data Mahasiswa</string>
+    <string name="text_dosen">Data Dosen</string>
+    <string name="name">NAMA</string>
+    <string name="nid">NIDN</string>
+    <string name="tanggal_lahir">TGL LAHIR</string>
+    <string name="sparator">:</string>
+    <string name="text_hint_nama">Nama</string>
+    <string name="text_hint_nidn">Nomor Induk Dosen</string>
+    <string name="text_hint_tanggal_lahir">Tanggal Lahir</string>
+    <string name="text_button_batal">Batal</string>
+    <string name="text_button_simpan">Simpan</string>
+    <string name="text_mahasiswa">Data Mahasiswa</string>
+    <string name="text_hint_npm">NPM</string>
+    <string name="text_jenis_kelamin">Jenis Kelamin</string>
+    <string name="npm">NPM</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="reister_as">Register Sebagai</string>
+    <string name="register">Register</string>
+</resources>

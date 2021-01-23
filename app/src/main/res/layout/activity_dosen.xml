@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.dosen.DosenActivity">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logout"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/ic_action_exit"
+        android:tint="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_logo_icon_dosen"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_book" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_data_dosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view_logo_icon_dosen"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_dosen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold|italic" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/layout_search_mahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_data_dosen"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_dosen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_weight="4"
+            android:drawableEnd="@drawable/ic_action_search"
+            android:hint="Masukan Nidn"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:tint="@android:color/darker_gray"
+            app:srcCompat="@drawable/ic_action_search" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_dosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_search_mahasiswa"
+        android:layout_marginTop="@dimen/_16sdp"
+        tools:listitem="@layout/item_dosen" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_data_dosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:rippleColor="@android:color/darker_gray"
+        app:elevation="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_action_add"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal" />
+
+</RelativeLayout>

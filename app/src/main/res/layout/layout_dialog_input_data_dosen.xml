@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_16sdp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:rippleColor="@android:color/darker_gray">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_photo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_action_add_circle" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/text_hint_nama"
+        android:padding="@dimen/_10sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_nidn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/text_hint_nidn"
+        android:padding="@dimen/_10sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_tanggal_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_edit_text"
+        android:editable="false"
+        android:hint="@string/text_hint_tanggal_lahir"
+        android:padding="@dimen/_10sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_simpan"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:minWidth="150dp"
+            android:text="@string/text_button_simpan"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/_16sdp"
+            app:rippleColor="@color/colorAccent"
+            app:strokeColor="@color/colorAccent"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_batal"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toStartOf="@id/button_simpan"
+            android:minWidth="150dp"
+            android:text="@string/text_button_batal"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/_16sdp"
+            app:rippleColor="@color/colorAccent"
+            app:strokeColor="@color/colorAccent"
+            app:strokeWidth="2dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
